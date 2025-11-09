@@ -1,0 +1,239 @@
+.skewed-header {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.header-bg {
+    background: url('img/menu.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    right: -50px;
+    bottom: -50px;
+    transform: skewY(-4deg);
+    z-index: -1;
+}
+
+.skewed-header-wrapper {
+    position: relative;
+    height: 100%;
+}
+
+
+.top-nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.top-nav a:hover {
+    color: orange;
+}
+
+.top-nav .active {
+    border-bottom: 2px solid orange;
+    padding-bottom: 3px;
+}
+
+
+.skewed-header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.heading-wrapper h1 {
+    background-color: orange;
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 2rem;
+    margin: 0;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #fff;
+    min-width: 180px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    color: #333;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f2f2f2;
+    color: orange;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.menu-section {
+    background: #fff;
+    padding: 60px 100px;
+}
+
+.menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-section h2 {
+    font-size: 2rem;
+    margin: 40px 0 20px;
+    color: #222;
+    position: relative;
+}
+
+.menu-section h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: orange;
+    margin-top: 8px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.menu-item {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.menu-item h3 {
+    margin: 10px 0;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.menu-item p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.menu-item .price {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #e63946;
+}
+
+.footer {
+    background-color: #000;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer .logo-footer img {
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.footer-phone-time {
+    color: rgb(186, 185, 206);
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.social-media-icons-wrapper {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media-icons-wrapper a {
+    font-size: 1.5em;
+    color: white;
+    transition: 0.3s;
+}
+
+.social-media-icons-wrapper a:hover {
+    color: rgb(184, 247, 215);
+}
+
+.footer-links {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: orange;
+}
+
+.footer .copyright-wrapper {
+    font-size: 0.9em;
+    margin-top: 10px;
+    color: rgb(186, 185, 206);
+}
